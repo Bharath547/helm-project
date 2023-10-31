@@ -3,19 +3,19 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: bharath-deployment
-  name: bharath-deployment
+    app: busybox-deployment
+  name: busybox-deployment
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: bharath-deployment
+      app: busybox-deployment
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: bharath-deployment
+        app: busybox-deployment
     spec:
       containers:
       - image: busybox
