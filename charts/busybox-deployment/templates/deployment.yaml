@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: bharath-deployment
+  name: bharath-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: bharath-deployment
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: bharath-deployment
+    spec:
+      containers:
+      - image: busybox
+        name: busybox
+        resources: {}
+status: {}
