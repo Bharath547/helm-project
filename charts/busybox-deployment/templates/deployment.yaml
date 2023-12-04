@@ -22,4 +22,8 @@ spec:
       - image: busybox
         name: busybox
         resources: {}
+      tolerations:
+      - key: "node-role.kubernetes.io/master"
+        operator: "Exists"
+        effect: "NoSchedule"
 status: {}
