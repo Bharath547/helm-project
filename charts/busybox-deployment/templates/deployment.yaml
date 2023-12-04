@@ -17,6 +17,7 @@ spec:
       labels:
         app: busybox-deployment
     spec:
+      serviceAccountName: jenkins-admin
       containers:
       - image: busybox
         name: busybox
